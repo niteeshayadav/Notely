@@ -1,7 +1,10 @@
 const express = require('express');
+const cors = require('cors');
 const Note = require("./models/note.model");
 
 const app = express();
+
+app.use(cors()); // Enable CORS for all routes
 app.use(express.json()); //middleware to parse JSON bodies
 
 
