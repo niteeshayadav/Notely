@@ -83,8 +83,9 @@ NOTELY/
     npm run dev
     ```
 ---
-
 ## 👤 Author
 
-**Niteesha** * **Education:** B.Tech in Information Technology, **Andhra University** (Class of 2027)
-* **Specialization:** Aspiring Full-Stack Developer specializing in the **MERN Stack**
+**Niteesha Yadav Panchadarla**
+
+* 🎓 **Education:** B.Tech in Information Technology, **Andhra University** (Class of 2027)
+* 💻 **Specialization:** Aspiring Full-Stack Developer specializing in the **MERN Stack* 
