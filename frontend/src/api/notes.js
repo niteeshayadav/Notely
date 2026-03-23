@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BACKEND_URL = "http://localhost:3000";
+const BACKEND_URL = "https://notely-xzcc.onrender.com";
 
 export const createNote = async(noteData) => {
     try{
