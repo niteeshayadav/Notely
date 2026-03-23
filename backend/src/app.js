@@ -48,6 +48,17 @@ app.get('/notes', async (req, res) => {
   });
 })
 
+//View a single note (GET request)
+
+app.get('/notes/:id', async (req,res) => {
+    const id = req.params.id;
+    const note = await Note.findById(id);
+    res.status(200).json({
+        message : "Note fetched successfully",
+        note : note
+    })
+})
+
 //To delete a note (DELETE request)
 
 app.delete('/notes/:id', async (req, res) => {
@@ -64,10 +75,14 @@ app.delete('/notes/:id', async (req, res) => {
 
 app.patch('/notes/:id', async (req, res) => {
     const id = req.params.id;
+    const title = req.body.title;
     const description = req.body.description;
     await Note.findByIdAndUpdate({
         _id : id
-    },{description : description});
+    },{
+        title : title,
+        description : description
+    });
     res.status(200).json({
         message : "Note updated successfully"
     })
